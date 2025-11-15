@@ -15,11 +15,18 @@ It combines ML models, data visualization, and a clean web interface to support 
 -Visualization: Matplotlib
 
 ## Output Screenshots
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/aa58ee38-192b-41b5-96a3-1b4eb14f8bc2" />
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/a25337e3-04f0-4c5a-a59d-22bf5aeda4d4" />
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/ba7e1edd-c1e0-409b-a55c-c4a2d4070c04" />
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/70cd5d8f-c8d1-4163-8ddc-6d29274f0849" />
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/fbcb8775-f9b2-4fd6-bb49-3331b1f6165f" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/0260d3bb-1273-40b8-9dd9-ebe5ae21eb45" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/548392a7-21a4-4793-ac6b-4ffc88265f17" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/1cc5113f-ced3-41c5-9161-be367fe537e8" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/72789991-02a4-4858-b156-5ae917bccabf" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/668680f6-7267-45a6-8486-b80201a56d68" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/63e05f3a-1fd6-422b-98d6-4dff398f7f72" />
+
+
+
+
+
+
 
 
 
