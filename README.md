@@ -3,16 +3,16 @@ This project is an end-to-end Machine Learning + Django web application designed
 It combines ML models, data visualization, and a clean web interface to support early diagnosis and healthcare decision-making.
 
  ## Machine Learning Models Used
--Logistic Regression
--Support Vector Machine (SVM)
--Decision Tree Classifier
--Artificial Neural Network(ANN)
+- Logistic Regression
+- Support Vector Machine (SVM)
+- Decision Tree Classifier
+- Artificial Neural Network(ANN)
 
 ## Tech Stack
--Frontend: HTML, CSS
--Backend: Django
--Machine Learning: Scikit-learn, Pandas, NumPy
--Visualization: Matplotlib
+- Frontend: HTML, CSS
+- Backend: Django
+- Machine Learning: Scikit-learn, Pandas, NumPy
+- Visualization: Matplotlib
 
 ## Output Screenshots
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/0260d3bb-1273-40b8-9dd9-ebe5ae21eb45" />
