@@ -14,22 +14,13 @@ It combines ML models, data visualization, and a clean web interface to support 
 -Machine Learning: Scikit-learn, Pandas, NumPy
 -Visualization: Matplotlib
 
-## 📁 Project Structure
-HeartDisease/
-Remote_User/
-SProvider/
-Template/
-manage.py
-Datasets.csv
-labeled_data.csv
-
 ## Output Screenshots
-<img width="849" height="468" alt="image" src="https://github.com/user-attachments/assets/aa58ee38-192b-41b5-96a3-1b4eb14f8bc2" />
-<img width="865" height="454" alt="image" src="https://github.com/user-attachments/assets/a25337e3-04f0-4c5a-a59d-22bf5aeda4d4" />
-<img width="865" height="454" alt="image" src="https://github.com/user-attachments/assets/ba7e1edd-c1e0-409b-a55c-c4a2d4070c04" />
-<img width="865" height="431" alt="image" src="https://github.com/user-attachments/assets/030692ed-2792-469e-8208-5b6d94cc0fbf" />
-<img width="865" height="448" alt="image" src="https://github.com/user-attachments/assets/70cd5d8f-c8d1-4163-8ddc-6d29274f0849" />
-<img width="865" height="554" alt="image" src="https://github.com/user-attachments/assets/fbcb8775-f9b2-4fd6-bb49-3331b1f6165f" />
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/aa58ee38-192b-41b5-96a3-1b4eb14f8bc2" />
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/a25337e3-04f0-4c5a-a59d-22bf5aeda4d4" />
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/ba7e1edd-c1e0-409b-a55c-c4a2d4070c04" />
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/030692ed-2792-469e-8208-5b6d94cc0fbf" />
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/70cd5d8f-c8d1-4163-8ddc-6d29274f0849" />
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/fbcb8775-f9b2-4fd6-bb49-3331b1f6165f" />
 
 
 
