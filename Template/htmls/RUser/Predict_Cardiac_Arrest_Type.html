@@ -1,0 +1,162 @@
+{% extends 'RUser/design.html' %}
+{% block userblock %}
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+<link href="https://fonts.googleapis.com/css?family=Lobster|Righteous|Fredoka+One" rel="stylesheet">
+
+<style>
+    body {
+        background-color: #000;
+    }
+
+    .container-fluid {
+        padding: 50px;
+    }
+
+    .container {
+        background-color: white;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(142, 79, 209, 0.3);
+    }
+
+    #title {
+        font-family: 'Fredoka One', cursive;
+    }
+
+    .style-header {
+        font-size: 20px;
+        font-weight: bold;
+        color: #c084fc;
+        text-align: center;
+    }
+
+    .form-table {
+        width: 100%;
+        margin-top: 20px;
+        font-family: 'Righteous', cursive;
+    }
+
+    .form-table td {
+        padding: 12px;
+    }
+
+    .form-table td.label-cell {
+        background-color: #8e4fd1;
+        color: white;
+        text-align: center;
+        width: 25%;
+        font-weight: bold;
+    }
+
+    .form-table input, .form-table select {
+        width: 100%;
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    .predict-btn {
+        background-color: #8e4fd1;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        font-family: 'Righteous', cursive;
+    }
+
+    .predict-btn:hover {
+        background-color: #5D3FD3;
+    }
+
+    .result-box {
+        text-align: center;
+        background-color: #f3e8ff;
+        padding: 15px;
+        border: 2px solid #8e4fd1;
+        border-radius: 10px;
+        font-size: 20px;
+        color: #5D3FD3;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+</style>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form role="form" method="POST">
+                    {% csrf_token %}
+                    <p class="style-header">PREDICTION OF CARDIAC ARREST TYPE</p>
+                    <hr>
+
+                    <table class="form-table">
+                        <tr>
+                            <td class="label-cell">ENTER Fid</td>
+                            <td><input type="text" name="Fid"></td>
+                            <td class="label-cell">ENTER Age (in Days)</td>
+                            <td><input type="text" name="Age_In_Days"></td>
+                        </tr>
+                        <tr>
+                            <td class="label-cell">ENTER Sex</td>
+                            <td>
+                                <select name="Sex">
+                                    <option>--- Select ---</option>
+                                    <option>M</option>
+                                    <option>F</option>
+                                </select>
+                            </td>
+                            <td class="label-cell">Chest Pain Type</td>
+                            <td><input type="text" name="ChestPainType"></td>
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Resting BP</td>
+                            <td><input type="text" name="RestingBP"></td>
+                            <td class="label-cell">Resting ECG</td>
+                            <td><input type="text" name="RestingECG"></td>
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Max HR</td>
+                            <td><input type="text" name="MaxHR"></td>
+                            <td class="label-cell">Exercise Angina</td>
+                            <td><input type="text" name="ExerciseAngina"></td>
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Oldpeak</td>
+                            <td><input type="text" name="Oldpeak"></td>
+                            <td class="label-cell">ST Slope</td>
+                            <td><input type="text" name="ST_Slope"></td>
+                        </tr>
+                        <tr>
+                            <td class="label-cell">SLP</td>
+                            <td><input type="text" name="slp"></td>
+                            <td class="label-cell">CAA</td>
+                            <td><input type="text" name="caa"></td>
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Thall</td>
+                            <td><input type="text" name="thall"></td>
+                            <td></td>
+                            <td>
+                                <input name="submit" type="submit" class="predict-btn" value="Predict">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                {% if objs %}
+                <div class="result-box">
+                    Prediction of Cardiac Arrest Type: {{ objs }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+<tr>

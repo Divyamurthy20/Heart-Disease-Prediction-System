@@ -1,0 +1,84 @@
+{% extends 'SProvider/design1.html' %}
+{% block researchblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#f5f0ff;}
+			.container-fluid {padding:50px;}
+			.container{background-color:#ffffff;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 1104px;
+    height: 442px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #9933cc;
+	font-weight: bold;
+}
+.style7 {color: #9933cc}
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+
+
+
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+                            <p align="center" class="text-uppercase pull-center style1">View Detection of Cardiac Arrest  Type Found Ratio Details</p>
+                            <hr>
+                            <div>
+                               <table border="5" align="center" bordercolor="#8f00ff">
+                      <tr><td bgcolor="#ffffff" style="color:#8F00FF; font-weight:bold;"><div align="center"><span class="style10 style7">Cardiac Arrest Type</span></div></td>
+                          <td bgcolor="#ffffff" style="color:#8F00FF; font-weight:bold;"><div align="center"><span class="style10 style7">Ratio</span></div></td>
+                      </tr>
+                            {% for object in objs %}
+                      <tr>
+                                        <td bgcolor="#d6b377" style="color:#4b0082; font-size:20px; font-family:'Fredoka One',cursive;" ><div align="center">{{object.names}}</div></td>
+                                        <td bgcolor="#fff" style="font-family:monospace; font-size:19px; color:#6a0dad;"><div align="center" class="style9"><span class="style7">{{object.ratio}}</span></div></td>
+                                 </tr>
+
+                                        {% endfor %}
+                      </table>
+
+
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>

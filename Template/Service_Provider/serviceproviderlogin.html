@@ -1,0 +1,141 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+	<style>
+		body {
+			background: url("{% static 'bg.jpg' %}");
+			background-color: #E6E6FA; /* Light lavender */
+		}
+
+		.container-fluid {
+			padding: 50px;
+		}
+
+		.container {
+			background-color: white;
+			padding: 50px;
+			border-radius: 15px;
+			box-shadow: 0px 0px 15px rgba(138, 43, 226, 0.4);
+		}
+
+		#title {
+			font-family: 'Fredoka One', cursive;
+			color: #8A2BE2; /* Violet heading */
+		}
+
+		.text-uppercase {
+			font-family: 'Righteous', cursive;
+		}
+
+		.style1 {
+			color: #8A2BE2;
+			font-weight: bold;
+		}
+
+		.style2 {
+			font-family: 'Righteous', cursive;
+			color: #8A2BE2;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		.style5 {
+			color: #8A2BE2;
+			font-weight: bold;
+		}
+
+		input[type="text"],
+		input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			border: 2px solid #8A2BE2;
+			border-radius: 5px;
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+
+		input[type="submit"],
+		.btn {
+			background-color: #8A2BE2;
+			color: white;
+			font-weight: bold;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			transition: background-color 0.3s ease;
+		}
+
+		input[type="submit"]:hover,
+		.btn:hover {
+			background-color: #6A0DAD;
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div>
+			<h2 class="text-center style1" id="title">Heart Disease Identification Method Using Machine Learning Classification in E-Healthcare</h2>
+			<p class="text-center">
+				<span class="style5">
+					<small id="passwordHelpInline" class="text-muted">
+						Cardiac arrest, early detection, intensive care unit, statistical modeling...
+					</small>
+				</span>
+			</p>
+			<hr>
+
+			<div class="row">
+				<div class="col-md-2"><!-- spacer --></div>
+
+				<div class="col-md-5">
+					<form method="POST" role="form">
+						{% csrf_token %}
+						<fieldset>
+							<img src="{% static '/login.jpg' %}" alt="Login Image" class="img-fluid mb-3">
+							<p class="style2">Login Service Provider:</p>
+
+							<div class="form-group">
+								<input type="text" name="username" placeholder="User Name" required>
+							</div>
+							<div class="form-group">
+								<input type="password" name="password" placeholder="Password" required>
+							</div>
+							<div>
+								<input type="submit" name="submit1" class="btn btn-md" value="Login">
+							</div>
+						</fieldset>
+
+						<br><br>
+						<button class="btn btn-lg">
+							<a href="{% url 'login' %}">User Login</a>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
