@@ -7,6 +7,10 @@ It combines ML models, data visualization, and a clean web interface to support 
 - Support Vector Machine (SVM)
 - Decision Tree Classifier
 - Artificial Neural Network(ANN)
+  #  Models are evaluated using:
+- Accuracy Score
+- Confusion Matrix
+- F1 Score
 
 ## Tech Stack
 - Frontend: HTML, CSS
