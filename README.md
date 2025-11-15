@@ -22,6 +22,14 @@ It combines ML models, data visualization, and a clean web interface to support 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/668680f6-7267-45a6-8486-b80201a56d68" />
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/63e05f3a-1fd6-422b-98d6-4dff398f7f72" />
 
+## Why This Project Matters
+Cardiovascular diseases are the leading cause of death worldwide.
+ML-driven tools like this can help:
+- Support early detection
+- Assist doctors in decision-making
+- Reduce diagnostic delays
+- Improve patient awareness
+- This project demonstrates how AI can be used for real-world healthcare impact.
 
 
 
